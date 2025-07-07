@@ -14,10 +14,18 @@ if (yourLoveScore > 75) {
     name2.slice(0, 1).toUpperCase() + name2.slice(1, name2.length).toLowerCase() + " : " + yourLoveScore + 
      "%. You love each other like Kanye loves Kanye.");
 }
-else {
+
+if (yourLoveScore > 30 && yourLoveScore <= 70) {
     alert(name1.slice(0, 1).toUpperCase() + name1.slice(1, name1.length).toLowerCase() + "❤️" + 
     name2.slice(0, 1).toUpperCase() + name2.slice(1, name2.length).toLowerCase() + " : " + yourLoveScore + 
      "%.");
+}
+
+
+if (yourLoveScore <= 30){
+    alert(name1.slice(0, 1).toUpperCase() + name1.slice(1, name1.length).toLowerCase() + "❤️" + 
+    name2.slice(0, 1).toUpperCase() + name2.slice(1, name2.length).toLowerCase() + " : " + yourLoveScore + 
+     "%. You go together like oil and water.");
 }
 
 
