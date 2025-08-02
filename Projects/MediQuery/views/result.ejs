@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+      <img src="https://img.icons8.com/ios-filled/100/4a90e2/pill.png" alt="pill-icon" width="60" />
+      <h1 class="app-title mt-2">Drug Information</h1>
+    </div>
+
+    <% if (locals.drug) { %>
+      <div class="card shadow-lg p-4 mx-auto" style="max-width: 700px;">
+        <h3 class="mb-3 text-primary">
+          <%= drug.openfda.brand_name?.[0] || "No Brand Name" %>
+        </h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Generic Name:</strong> <%= drug.openfda.generic_name?.[0] || "N/A" %>
+          </li>
+          <li class="list-group-item">
+            <strong>Manufacturer:</strong> <%= drug.openfda.manufacturer_name?.[0] || "Unknown" %>
+          </li>
+          <li class="list-group-item">
+            <strong>Purpose:</strong> <%= drug.purpose?.[0] || "Not specified" %>
+          </li>
+          <li class="list-group-item">
+            <strong>Usage / Indications:</strong><br />
+            <%= drug.indications_and_usage?.[0] || "No usage information available." %>
+          </li>
+          <li class="list-group-item">
+            <strong>Warnings:</strong><br />
+            <%= drug.warnings?.[0] || "No warning info available." %>
+          </li>
+        </ul>
+      </div>
+    <% } else { %>
+      <div class="alert alert-danger text-center mx-auto mt-5" style="max-width: 500px;">
+        <h4><%= error %></h4>
+      </div>
+    <% } %>
+
+    <div class="text-center mt-4">
+      <a href="/" class="btn btn-outline-primary">🔙 Search Another Drug</a>
+    </div>
+  </div>
+
+<%- include("partials/footer.ejs") %>
