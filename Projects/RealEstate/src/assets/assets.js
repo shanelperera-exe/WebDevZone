@@ -35,67 +35,66 @@ export const assets = {
 
 export const projectsData = [
     {
-      title: "Skyline Haven",
-      price: "$2,50,000",
-      location: "California",
+      title: "Ocean Breeze Residences",
+      price: "Rs. 85,000,000",
+      location: "Colombo",
       image: project_img_1
     },
     {
-      title: "Vista Verde",
-      price: "$2,50,000",
-      location: "San Francisco",
+      title: "Hilltop Green",
+      price: "Rs. 65,000,000",
+      location: "Kandy",
       image: project_img_2
     },
     {
-      title: "Serenity Suites",
-      price: "$2,50,000",
-      location: "Chicago",
+      title: "Serendib Suites",
+      price: "Rs. 72,000,000",
+      location: "Galle",
       image: project_img_3
     },
     {
-      title: "Central Square",
-      price: "$2,50,000",
-      location: "Los Angeles",
+      title: "Central Plaza Residencies",
+      price: "Rs. 95,000,000",
+      location: "Negombo",
       image: project_img_4
     },
     {
-      title: "Vista Verde",
-      price: "$2,50,000",
-      location: "San Francisco",
+      title: "Cinnamon View",
+      price: "Rs. 68,000,000",
+      location: "Matara",
       image: project_img_5
     },
     {
-      title: "Serenity Suites",
-      price: "$2,50,000",
-      location: "Chicago",
+      title: "Lotus Grove",
+      price: "Rs. 78,000,000",
+      location: "Anuradhapura",
       image: project_img_6
     },
-    
-  ];
+];
 
-  export const testimonialsData = [
+export const testimonialsData = [
     {
-        name: "Donald Jackman",
-        title: "Marketing Manager",
+        name: "Nimal Perera",
+        title: "Hotel Manager",
         image: profile_img_1,
-        alt: "Portrait of Donald Jackman",
+        alt: "Portrait of Nimal Perera",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "From the very first meeting, they understood my vision and helped me find the perfect home in Colombo. Their local knowledge and warm approach made the process smooth and stress-free."
     },
     {
-        name: "Richard Nelson",
-        title: "UI/UX Designer",
+        name: "Dilani Fernando",
+        title: "Architect",
         image: profile_img_2,
-        alt: "Portrait of Richard Nelson",
+        alt: "Portrait of Dilani Fernando",
         rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "They guided me through every step of buying property in Galle. I truly appreciate their professionalism and understanding of the Sri Lankan real estate market."
     },
     {
-        name: "James Washington",
-        title: "Co-Founder",
+        name: "Suresh Jayasinghe",
+        title: "Entrepreneur",
         image: profile_img_3,
-        alt: "Portrait of James Washington",
+        alt: "Portrait of Suresh Jayasinghe",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Thanks to their expertise, I found the perfect holiday villa in Kandy. They made the entire process simple, transparent, and enjoyable."
     }
 ];
